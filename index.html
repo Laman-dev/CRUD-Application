@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD APP-JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        <div class="top-img text-center">
+            <img src="./images/logo.png" alt="logo">
+        </div>
+        <div class="top-heading text-center">
+            <h1 class="heading">CRUD APP</h1>
+            <p class="paragraph">( Create | Read | Update | Delete )</p>
+        </div>
+
+        <!-- ========================================================================== -->
+        <!-- ========================================================================== -->
+
+        <div class="main row justify-content-center">
+            <!-- =====Form Start===== -->
+            <form action="#" id="form-data" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="title"><b>Your Title</b></label>
+                    <input class="form-control p-3" type="text" id="title" placeholder="enter title">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="description"><b>Description</b></label>
+                    <textarea class="form-control p-3" id="description" rows="5"
+                        placeholder="enter description"></textarea>
+                </div>
+
+                <div class="col-10 col-md-8">
+                    <button class="btn btn-outline-primary" onclick="event.preventDefault(), addData()"
+                        id="submit-btn">Submit</button>
+                    <button class="btn btn-outline-primary" id="update-btn">Update Data</button>
+                </div>
+            </form>
+            <!-- =====Form End===== -->
+
+            <!-- ========================================================================== -->
+            <!-- ========================================================================== -->
+
+
+            <div class="row justify-content-center col-12 col-md-10 mt-3 mb-5" id="all-data">
+
+                <!-- <div class="card m-2" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">1. Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-success btn-sm edit">Edit</a>
+                        <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <!-- ========================================================================== -->
+            <!-- ========================================================================== -->
+
+
+        </div>
+    </div>
+
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+
+</html>
